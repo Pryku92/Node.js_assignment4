@@ -1,0 +1,14 @@
+<%- include('includes/start.ejs') %>
+
+    <% if(usrArr.length > 0) { %>
+        <h1>List of users:</h1>
+        <ul>
+            <% for (let user of usrArr) { %>
+             <li><%= user %></li>
+            <% } %>
+        </ul>
+    <% } else { %>
+        <h1>No users to display!</h1>
+    <% } %>
+
+<%- include('includes/end.ejs') %>
